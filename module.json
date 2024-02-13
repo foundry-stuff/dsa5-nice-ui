@@ -1,0 +1,42 @@
+{
+  "id": "dsa5-nice-ui",
+  "version": "0.1",
+  "title": "The Dark Eye 5th Ed. - Nice User Interface",
+  "description": "A nicer user interface for TDE5. Eine schönere Benutzeroberfläche für DSA5.",
+  "authors": [
+    {
+      "name": "hepp",
+      "url": "https://github.com/foundry-stuff",
+      "discord": "hepp#4928"
+    }
+  ],
+  "url": "https://github.com/foundry-stuff/dsa5-nice-ui",
+  "manifest": "https://raw.githubusercontent.com/foundry-stuff/dsa5-nice-ui/main/module.json",
+  "download": "https://github.com/foundry-stuff/dsa5-nice-ui/releases/download/0.1/module.zip",
+  "bugs": "https://github.com/foundry-stuff/dsa5-nice-ui/issues",
+  "compatibility": {
+    "verified": "11"
+  },
+  "scripts": [
+    "scripts/nice.js",
+    "scripts/hotbar.js"
+  ],
+  "styles": [
+    "styles/nice.css"
+  ],
+  "languages": [],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dsa5",
+        "type": "system"
+      }
+    ],
+    "requires": [
+      {
+        "id": "lang-de",
+        "type": "module"
+      }
+    ]
+  }
+}

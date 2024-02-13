@@ -1,0 +1,138 @@
+#sidebar {
+  width: 400px;
+  --always-chat-position: 400px;
+  --app-bg-color: #111;
+  background: rgba(00, 00, 00, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+.cards .item {
+  box-shadow: 0 0 12px rgba(64,64,64,.5) inset;
+}
+
+.window-app .window-header {
+  font-size: large;
+  --fa-style-family-classic: "Font Awesome 6 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+.window-header a {
+  font-size: 0px;
+}
+
+.window-header a i {
+  font-size: 14px;
+}
+
+/* GM Screen currently not used.
+
+:root {
+  --gm-screen-ui-right-width: 410px;
+}
+
+:root .gm-screen-app.gm-screen-drawer .gm-screen-actions {
+  right: 190px;
+  bottom: calc(100% + 14px);
+  margin-bottom: 15px;
+}
+
+:root .gm-screen-app.gm-screen-drawer.expanded .gm-screen-actions button {
+  margin-bottom: 0px;
+  transform: rotate(0deg);
+}
+
+:root .gm-screen-app .gm-screen-actions button {
+  margin-bottom: 20px;
+}
+
+*/
+
+#settings.settings-sidebar button[data-action="invitations"] {
+    display: none;
+}
+
+#settings.settings-sidebar button[class="fshopButton"] {
+    display: none;
+}
+
+button:active:not(.pm-dropdown, :disabled), a:active {
+  filter: brightness(0.6);
+}
+
+:root #sidebar-tabs {
+  margin: 0 0 5px;
+}
+
+:root #sidebar-tabs > .item.active {
+    box-shadow: 0 0 10px inset #eee;
+    border: 1px solid #ededed;
+}
+
+:root #sidebar-tabs > .item {
+    padding: 3px 7px 3px 7px;
+}
+
+/* Change DSA5 Icon on left control bar. */
+.fa-dsa5-player:before, .fa-dsa5:before {
+  background-image: url('../icons/eye.svg');
+  top: 3px;
+  height: 100%;
+}
+
+/* Adjust DSA button when it is clicked. */
+#controls ol.control-tools > li.active > i.fa-dsa5:before{
+    top: 0px;
+}
+
+:root #navigation #scene-list .scene active {
+    box-shadow: 0 0 10px inset #eee;
+    border: 2px solid #c9c7b8;
+}
+
+:root #navigation #scene-list .scene.view {
+    box-shadow: 0 0 8px inset #eee;
+    border: 1px solid #c9c7b8;
+}}
+
+:root {
+      --hotbarxpos: 510px;
+}
+
+#hotbar:hover {
+    transition: 0.5s;
+    opacity: 100%;
+}
+
+#hotbar {
+    left: var(--hotbarxpos);
+    transition: 0.5s ease-out 0.5s;
+}
+
+#hotbar .bar-controls span.page-number {
+    line-height: 0.5;
+}
+
+
+#controls ol.control-tools > li.active, #controls ol.control-tools > li:hover {
+    box-shadow: 0 0 10px inset #eee;
+    border: 2px solid #c9c7b8;
+}
+
+#sidebar-tabs {
+    border-bottom: 1px solid #222;
+    box-shadow: 0 0 10px #111;
+}
+
+:root #tokenAttacher {
+    top: 110px;
+    left: unset;
+    right: 430px;
+}
